@@ -9,7 +9,7 @@
 	#banner {
 		@include vendor('background-image', (
 			'linear-gradient(to top, #{transparentize(_palette(bg-alt), 0.5)}, #{transparentize(_palette(bg-alt), 0.5)})',
-			'url("../../images/banner_1.jpg")'
+			'url("../../images/banners/homepagex1000.jpg")'
 		));
 		background-attachment: fixed;
 		background-position: center center;

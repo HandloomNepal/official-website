@@ -5,6 +5,10 @@
 {% block header1 %}
 {% endblock %}
 
+{% block page_title %}
+Home
+{% endblock %}
+
 {% block banner_content %}
 <p>Welcome to </p>
 <h1>HandloomNepal</h1>
@@ -27,13 +31,58 @@
                 <article>
                     <span class="image"><img src="{{SITEURL}}/static/images/logo.jpg" alt=""></span>
                     <div class="content">
-                        <p>Nepal Handloom Silk Industry first was established as Pioneer Silk Impex in 1978. Since 1998 we have acknowledged ourselves as Nepal Handloom Silk Industry.</p>
+                        <p>
+                            <strong>Himalayan Women&apos;s Skills Society, HWSS</strong>, is a young and inspiring non-profit organisation born from the need to help disadvantaged women from an array of backgrounds. The need was noticed by a local school founder director <strong>Ms Monika Thapa</strong>, who recognised the need to help improve the lives of underprivileged women.</p>
                         <ul class="actions">
                             <li><a href="{{SITEURL}}/about-us.html" class="button">More</a></li>
                         </ul>
                     </div>
                 </article>
+
+                
             </section>
+
+            <section class="spotlights">
+					<article>
+
+						<div class="box alt">
+							<div class="row 50% uniform">
+								{% for img in GALLERY_IMAGES[0:9] %}
+								<div class="4u">
+									<span class="image fit">
+										<a class='thumbnail' href='{{SITEURL}}/gallery.html'>
+											<img src='{{GALLERY_DIR}}/thumbs/{{img}}' />
+										</a>
+									</span>
+								</div>
+								{% endfor %}
+							</div>
+						</div>						
+					</article>
+					<article>
+						<!--<header class="major">
+							<p>Lorem</p>
+							<h2>Ipsum dolor sit amet</h2>
+						</header>
+						<p>Phasellus in ante vitae nibh porttitor tempus vitae ut ante. Vestibulum blandit ex a elementum viverra. Sed quat diam,
+							aliquet tempus felis nisl at lacus.</p>
+						<ul class="actions">
+							<li><a href="#" class="button">More</a></li>
+						</ul>-->
+						<div class="row 50% uniform">
+								{% for img in GALLERY_IMAGES[10:16] %}
+								<div class="4u">
+									<span class="image fit">
+										<a class='thumbnail' href='{{SITEURL}}/gallery.html'>
+											<img src='{{GALLERY_DIR}}/thumbs/{{img}}' />
+										</a>
+									</span>
+								</div>
+								{% endfor %}
+							</div>
+					</article>
+				</section>
+                
         </div>
     </section>
 {% endblock %}

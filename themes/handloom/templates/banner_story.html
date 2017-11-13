@@ -1,0 +1,22 @@
+{% extends 'generic.html' %}
+{% block page_title %}
+{{article.title}}
+{% endblock %}
+
+{% block article %}
+	<section id="main" class="wrapper alt">
+			<div class="inner">
+
+				<header class="major special">
+					<p>{{article.title2}}</p>
+					<h1>{{article.title}}</h1>
+				</header>
+
+				<a href="#" class="image main"><img src="{{SITEURL}}/static/images/{{article.banner}}" alt="{{article.title}}" /></a>
+
+				<div class="content">
+				{{article.content}}
+				</div>
+			</div>
+		</section>
+	{% endblock %}

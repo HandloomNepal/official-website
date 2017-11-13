@@ -1,33 +1,22 @@
 {% extends 'generic.html' %}
+{% block page_title %}
+{{article.title}}
+{% endblock %}
 
 {% block article %}
 	<section id="main" class="wrapper alt">
 			<div class="inner">
 
 				<header class="major special">
-					<p>About Us</p>
-					<h1>Our Products</h1>
+					<p>{{article.title2}}</p>
+					<h1>{{article.title}}</h1>
 				</header>
 
-				<a href="#" class="image main"><img src="{{SITEURL}}/static/images/banner_1.jpg" alt="" /></a>
-				<p>Nepal Handloom Silk Industry first was established as Pioneer Silk Impex in 1978. Since 1998 we have acknowledged ourselves as Nepal Handloom Silk Industry.</p>
+				<a href="#" class="image main"><img src="{{SITEURL}}/static/images/{{article.banner}}" alt="{{article.title}}" /></a>
 
-                <p>
-                    In 1989 we started an investment in the Pashmina Industry which helped our company in exploring new boundaries. In 2005 we spread our product line further, as we entered the Linen Industry (Linen yarns are imported from China and India, but all manufacturing process is done here, in Nepal). Since then we have been exporting Handloom Silk, Pashmina, Linen and other fabrics and garments to very satisfied, long term clients from many countries like Sweden, Norway, Italy, Ireland, Belgium, Netherlands (Europe), USA, Canada and Japan. We have also been successful in pleasing all levels of tourists who visit Nepal, in particular, the Japanese and the Europeans.
-                </p>
-                <p>
-
-<ul>
-    <li>Member of Export Council of Nepal</li>
-<li>Member of Silk Association of Nepal</li>
-<li>Member of Handicraft Association of Nepal</li>
-</ul>
-                </p>
-                <p>
-
-Nepal Handloom Silk Industry always makes its fabrics from 100% natural fibers and raw materials resulting in the unique texture on the fabric and its comfortabilty on human skin making it free from allergies. Nepal Handloom Silk Industry has a strict rule against the use of any synthetic fibers. All our products are Eco friendly and completely bio degradable. We always gave preference to promote and utilize local labor which helped in increasing the standard of living of the indigenous and less privileged people. We take pride in informing you we have never supported any kind of child labor and we make sure that our chain, from supplies to our customers is also free from child labor environment. Our top priority has always been to keep our products in quality, although small variations in color, texture and shrinkage up to a maximum of 3% is possible due to the entirely handmade nature of every product.
-                </p>
-
+				<div class="content">
+				{{article.content}}
+				</div>
 			</div>
 		</section>
 	{% endblock %}
