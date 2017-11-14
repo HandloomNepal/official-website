@@ -2729,10 +2729,10 @@ body.is-menu-visible #menu {
 */
 /* Banner */
 #banner {
-  background-image: -moz-linear-gradient(to top, rgba(71, 46, 104, 0.5), rgba(71, 46, 104, 0.5)), url("../../images/banner_1.jpg");
-  background-image: -webkit-linear-gradient(to top, rgba(71, 46, 104, 0.5), rgba(71, 46, 104, 0.5)), url("../../images/banner_1.jpg");
-  background-image: -ms-linear-gradient(to top, rgba(71, 46, 104, 0.5), rgba(71, 46, 104, 0.5)), url("../../images/banner_1.jpg");
-  background-image: linear-gradient(to top, rgba(71, 46, 104, 0.5), rgba(71, 46, 104, 0.5)), url("../../images/banner_1.jpg");
+  background-image: -moz-linear-gradient(to top, rgba(71, 46, 104, 0.5), rgba(71, 46, 104, 0.5)), url("../../images/banners/homepagex1000.jpg");
+  background-image: -webkit-linear-gradient(to top, rgba(71, 46, 104, 0.5), rgba(71, 46, 104, 0.5)), url("../../images/banners/homepagex1000.jpg");
+  background-image: -ms-linear-gradient(to top, rgba(71, 46, 104, 0.5), rgba(71, 46, 104, 0.5)), url("../../images/banners/homepagex1000.jpg");
+  background-image: linear-gradient(to top, rgba(71, 46, 104, 0.5), rgba(71, 46, 104, 0.5)), url("../../images/banners/homepagex1000.jpg");
   background-attachment: fixed;
   background-position: center center;
   background-size: cover;
