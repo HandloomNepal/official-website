@@ -19,12 +19,12 @@
 		<!-- Header -->
 		{% block header %}
 		<header id="header" class="alt">
-			<span class="logo"><a href="index.html">Handloom</a><span>Nepal</span></span>
+			<span class="logo"><a href="{{SITEURL}}/index.html">Handloom</a><span>Nepal</span></span>
 			<a href="#menu">Menu</a>
 		</header>
 		{% endblock %} {% block header1 %}
 		<header id="header">
-			<span class="logo"><a href="index.html">Handloom</a><span>Nepal</span></span>
+			<span class="logo"><a href="{{SITEURL}}/index.html">Handloom</a><span>Nepal</span></span>
 			<a href="#menu">Menu</a>
 		</header>
 		{% endblock %}
@@ -35,9 +35,10 @@
 			<div class="inner">
 				<h2>Menu</h2>
 				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="about-us.html">About Us</a></li>
-					<li><a href="our-stories.html">Stories of our Women</a></li>
+					<li><a href="{{SITEURL}}/index.html">Home</a></li>
+					<li><a href="{{SITEURL}}/about-us.html">About Us</a></li>
+					<li><a href="{{SITEURL}}/impact.html">Our Impact</a></li>
+					<li><a href="{{SITEURL}}/our-stories.html">Stories of our Women</a></li>
 				</ul>
 				<a class="close">Close</a>
 			</div>
@@ -59,36 +60,6 @@
 		</section>
 		{% endblock %}
 
-		<!-- Two -->
-		{% block stats %}
-		<section id="two" class="wrapper style1 special">
-			<div class="inner">
-				<ul class="features">
-					<li>
-						<span class="icon major fa-bar-chart"></span>
-						<h4>Placerat</h4>
-						<p>Lorem ipsum dolor sit amet nullam et consequat.</p>
-					</li>
-					<li>
-						<span class="icon major fa-paper-plane-o"></span>
-						<h4>Libero</h4>
-						<p>Lorem ipsum dolor sit amet nullam et consequat.</p>
-					</li>
-					<li>
-						<span class="icon major fa-area-chart"></span>
-						<h4>Solicitu</h4>
-						<p>Lorem ipsum dolor sit amet nullam et consequat.</p>
-					</li>
-					<li>
-						<span class="icon major fa-file-image-o"></span>
-						<h4>Tempor</h4>
-						<p>Lorem ipsum dolor sit amet nullam et consequat.</p>
-					</li>
-				</ul>
-			</div>
-		</section>
-
-		{% endblock %}
 		<!-- Three -->
 		{% block featured_content %}
 		<section id="three" class="wrapper">
@@ -162,54 +133,74 @@
 		{% endblock %}
 
 
+<!-- Two -->
+		{% block stats %}
+		<section id="two" class="wrapper style1 special">
+			<div class="inner">
+				<ul class="features">
+					<li>
+						<span class="icon major fa-bar-chart"></span>
+						<h4>Placerat</h4>
+						<p>Lorem ipsum dolor sit amet nullam et consequat.</p>
+					</li>
+					<li>
+						<span class="icon major fa-paper-plane-o"></span>
+						<h4>Libero</h4>
+						<p>Lorem ipsum dolor sit amet nullam et consequat.</p>
+					</li>
+					<li>
+						<span class="icon major fa-area-chart"></span>
+						<h4>Solicitu</h4>
+						<p>Lorem ipsum dolor sit amet nullam et consequat.</p>
+					</li>
+					<li>
+						<span class="icon major fa-file-image-o"></span>
+						<h4>Tempor</h4>
+						<p>Lorem ipsum dolor sit amet nullam et consequat.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		{% endblock %}
+
 		<!-- Four -->
 		{% block timeline %}
 		<section id="four" class="wrapper style2 alt">
 			<div class="inner">
 				<header class="major">
-					<p>Malesuada</p>
-					<h2>Aliquam tincidunt mauris eu risus</h2>
+					<p>Stories of our Women</p>
+					<h2>Road to the empowerment</h2>
 				</header>
 				<section class="timeline">
 					<section>
 						<header>
-							<p>09.04.16</p>
-							<h4>Magna etiam sed lorem ipsum dolor amet</h4>
+							<p>Bima</p>
+							<h4>Unsuccessful Middle-East ride</h4>
 						</header>
-						<span class="image"><img src="images/pic02.jpg" alt=""></span>
+						<span class="image"><img src="{{SITEURL}}/static/images/homepage/bima.300.jpg" alt=""></span>
 						<div class="content">
-							<p>Phasellus in ante vitae nibh porttitor tempus vitae ut ante. Vestibulum blandit dolor elementum viverra. Sed quat
-								a diam, aliquet tempus felis. Phasellus et magna vitae nibh porttitor tempus vitae.</p>
+							<p>
+Coming from a small village roughly 70km from Pokhara, limited education, as there are no constructed roads, transport is very difficult so it involves much walking.
+Bima&apos;s husband had an opportunity to work in the Middle-East. For him to do this, meant taking loans from friends and relatives.
+Unfortunately when he arrived this proved to be a scam that happens to many people from Nepal. He barely made enough money to exist let alone send money for his family or pay loans. </p>
 							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
+								<li><a href="{{SITEURL}}/story/bima.html" class="button">More</a></li>
 							</ul>
 						</div>
 					</section>
 					<section>
 						<header>
-							<p>08.28.16</p>
-							<h4>Sed feugiat et mauris adipiscing dolor</h4>
+							<p>Kalpana</p>
+							<h4>A love story</h4>
 						</header>
-						<span class="image"><img src="images/pic03.jpg" alt=""></span>
+						<span class="image"><img src="{{SITEURL}}/static/images/homepage/kalpana.300.jpg" alt=""></span>
 						<div class="content">
-							<p>Phasellus in ante vitae nibh porttitor tempus vitae ut ante. Vestibulum blandit dolor elementum viverra. Sed quat
-								a diam, aliquet tempus felis. Phasellus et magna vitae nibh porttitor tempus vitae.</p>
+							<p>
+								Kalpana&apos;s story is not just a story of struggle but also a true love story. Kalpana and her husband originated in Chitwan, an area in southern Nepal. As they are both from different casts, neither of their families agreed to their marriage
+							</p>
 							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
-							</ul>
-						</div>
-					</section>
-					<section>
-						<header>
-							<p>08.22.16</p>
-							<h4>Tellus magna dolore sed elementum</h4>
-						</header>
-						<span class="image"><img src="images/pic04.jpg" alt=""></span>
-						<div class="content">
-							<p>Phasellus in ante vitae nibh porttitor tempus vitae ut ante. Vestibulum blandit dolor elementum viverra. Sed quat
-								a diam, aliquet tempus felis. Phasellus et magna vitae nibh porttitor tempus vitae.</p>
-							<ul class="actions">
-								<li><a href="#" class="button">More</a></li>
+								<li><a href="{{SITEURL}}/story/kalpana.html" class="button">More</a></li>
 							</ul>
 						</div>
 					</section>
