@@ -1,0 +1,42 @@
+{% extends 'generic.html' %} {% block page_title %} {{article.title}} {% endblock %} {% block article %}
+<section id="main" class="wrapper alt">
+    <div class="inner">
+
+        <header class="major special">
+            <p>{{article.title2}}</p>
+            <h1>{{article.title}}</h1>
+        </header>
+
+        {% if article.banner %}
+        <a href="#" class="image main"><img src="{{SITEURL}}/static/images/{{article.banner}}" alt="{{article.title}}" /></a>
+        {% endif %}
+
+        <div class="content">
+            {% with gallery_images = article.content %} 
+            {% for image in gallery_images.split('\n') %}
+            {% if image %}
+                {% with image_notags= image|striptags %}
+                    {% with image_params = image_notags.split(" ", 1) %}
+                    {% if image_params.0 == "--" %}
+                    <header class="major special">
+                        <p>&nbsp;</p>
+                        <h1 style="">{{image_params.1}}</h1>
+                    </header>
+                    {% else %}
+                    <div class="image">
+                        <a href="{{SITEURL}}/static/images/{{article.gallery_imagedir}}/{{article.gallery_fullsizedir}}/{{image_params.0}}">
+                            <img src="{{SITEURL}}/static/images/{{article.gallery_imagedir}}/{{article.gallery_thumbdir}}/{{image_params.0}}" />
+                        </a>
+                    </div>
+                    {% endif %}
+                    {% endwith %}
+                {% endwith %}
+            {% else %}
+                <div>Noting :: {{loop.index}}</div>
+            {% endif %} 
+            {% endfor %}
+            {% endwith %}
+        </div>
+    </div>
+</section>
+{% endblock %} 

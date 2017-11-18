@@ -1,0 +1,100 @@
+Title2: About Us
+Title: Handloom in Pictures (Photo Gallery)
+Date: 2017-07-09
+Template: gallery
+Slug: gallery
+Gallery_ImageDir: gallery
+Gallery_ThumbDir: thumbs
+Gallery_FullsizeDir: large
+
+
+-- Women at work
+DSC_3030.JPG
+
+DSC_3045.JPG
+
+DSC_3056.JPG
+
+DSC_3059.JPG
+
+DSC_3047.JPG
+
+DSC_3093.JPG
+
+DSC_3097.JPG
+
+DSC_3101.JPG
+
+
+DSC_3300.JPG
+
+DSC_3303.JPG
+
+DSC_3305.JPG
+
+DSC_3308.JPG
+
+DSC_3313.JPG
+
+DSC_3317.JPG
+
+DSC_3318.JPG
+
+DSC_3320.JPG
+
+DSC_3322.JPG
+
+DSC_3325.JPG
+
+DSC_3329.JPG
+
+DSC_3332.JPG
+
+
+
+-- From our Production
+
+DSC_3082.JPG
+
+DSC_3084.JPG
+
+DSC_3065.JPG
+
+DSC_3068.JPG
+
+DSC_3075.JPG
+
+DSC_3080.JPG
+
+-- Ms. Monika Thapa and her Team
+
+DSC_3137.JPG
+
+DSC_3141.JPG
+
+DSC_3151.JPG
+
+DSC_3174.JPG
+
+DSC_3188.JPG
+
+DSC_3397.JPG
+
+DSC_3398.JPG
+
+DSC_3400.JPG
+
+DSC_3401.JPG
+
+DSC_3193.JPG
+
+
+-- Office 
+
+DSC_3176.JPG
+
+DSC_3177.JPG
+
+DSC_3272.JPG
+
+DSC_3273.JPG

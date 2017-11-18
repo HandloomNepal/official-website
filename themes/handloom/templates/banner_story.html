@@ -12,11 +12,22 @@
 					<h1>{{article.title}}</h1>
 				</header>
 
+				{% if article.banner %}
 				<a href="#" class="image main"><img src="{{SITEURL}}/static/images/{{article.banner}}" alt="{{article.title}}" /></a>
+				{% endif %}
 
 				<div class="content">
 				{{article.content}}
 				</div>
+
+				{% if article.gallery %}
+				{{article.gallery}}
+				<div class="content">
+					{% for img in article.gallery %}
+						{{img}}
+					{% endfor %}
+				</div>
+				{% endif %}
 			</div>
 		</section>
 	{% endblock %}
